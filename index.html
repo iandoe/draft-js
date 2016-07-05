@@ -121,7 +121,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
         render() {
           let urlInput;
           if (this.state.showURLInput) {
-            urlInput =
+            urlInput = (
               <div style={styles.urlInputContainer}>
                 <input
                   onChange={this.onURLChange}
@@ -134,7 +134,8 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
                 <button onMouseDown={this.confirmLink}>
                   Confirm
                 </button>
-              </div>;
+              </div>
+            );
           }
 
           return (
